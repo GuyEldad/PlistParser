@@ -170,4 +170,4 @@ For questions or feedback, contact me via https://www.linkedin.com/in/guy-eldad/
 
 ---
 
-*Copyright © 2025 Guy Eldad. All rights reserved.*
+*Copyright © 2026 Guy Eldad. All rights reserved.*
