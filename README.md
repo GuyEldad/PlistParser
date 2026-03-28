@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="PlistParser.jpg" alt="PlistParser Banner" width="850">
+  <img src="PlistParser.svg" alt="PlistParser Banner" width="850">
 </p>
 
 # PlistParser
