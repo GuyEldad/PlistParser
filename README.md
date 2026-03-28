@@ -10,7 +10,7 @@
 
 - Parses **binary**, **XML** plist formats.
 - Exports results as **TXT**, **JSON**, or **CSV** with auto-detected columns per plist.
-- **Live scan mode** (`--live`) - scans common forensically relevant plist locations on a live macOS system, including Preferences, LaunchAgents, LaunchDaemons, Containers, iCloud, and other plist-based artifacts.
+- **Live scan mode** (`--live`) - scans common forensically relevant plist locations on a live macOS system, including Preferences, LaunchAgents, LaunchDaemons, and other plist-based artifacts.
 - Supports **single file**, **recursive directory**, and **live system** scanning modes.
 - Handles **duplicate filenames** across directories - renames and logs automatically.
 - Available as a **standalone executable** for Windows, Linux, and macOS - no dependencies required.
