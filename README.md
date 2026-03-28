@@ -4,7 +4,7 @@
 
 # PlistParser
 
-**PlistParser** is a forensic tool for parsing macOS property list (plist) files in binary and XML formats. Built for DFIR and working with live macOS systems or offline triage images, it supports flexible export formats and a live system scan mode for rapid forensic collection.
+**PlistParser** is a forensic tool for parsing macOS property list (plist) files in both binary and XML formats. Built for DFIR and designed to work with live macOS systems or offline triage images, it supports flexible export formats and includes a live system scan mode for forensic collection.
 
 ## Features
 
