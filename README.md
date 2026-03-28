@@ -4,16 +4,16 @@
 
 # PlistParser
 
-**PlistParser** is a forensic tool for parsing macOS property list (plist) files in binary and XML formats. Designed for investigators and analysts working with live macOS systems or offline triage images, it supports flexible export formats and a live system scan mode for rapid forensic collection.
+**PlistParser** is a forensic tool for parsing macOS property list (plist) files in binary and XML formats. Built for DFIR and working with live macOS systems or offline triage images, it supports flexible export formats and a live system scan mode for rapid forensic collection.
 
 ## Features
 
-- Parses **binary**, **XML**, and **JSON** plist formats — auto-detected.
+- Parses **binary**, **XML** plist formats.
 - Exports results as **TXT**, **JSON**, or **CSV** with auto-detected columns per plist.
-- **Live scan mode** (`--live`) — scans relevant forensic plist locations on a live macOS system including Safari, Preferences, LaunchAgents/Daemons, Containers, iCloud, and more.
+- **Live scan mode** (`--live`) - scans relevant forensic plist locations on a live macOS system including Safari, Preferences, LaunchAgents/Daemons, Containers, iCloud, and more.
 - Supports **single file**, **recursive directory**, and **live system** scanning modes.
-- Handles **duplicate filenames** across directories — renames and logs automatically.
-- Available as a **standalone executable** for Windows, Linux, and macOS — no dependencies required.
+- Handles **duplicate filenames** across directories - renames and logs automatically.
+- Available as a **standalone executable** for Windows, Linux, and macOS - no dependencies required.
 
 ## Download
 
@@ -92,7 +92,7 @@ PlistParser Downloads.plist --txt --json --csv
 Parse and save to a specific output folder (no console output):
 
 ```bash
-PlistParser Downloads.plist --txt -o C:\results          # Windows
+PlistParser.exe Downloads.plist --txt -o C:\results          # Windows
 ./PlistParser Downloads.plist --txt -o ~/results         # Linux / macOS
 ```
 
@@ -103,7 +103,7 @@ PlistParser Downloads.plist --txt -o C:\results          # Windows
 Scan a folder recursively and export all parsed plists:
 
 ```bash
-PlistParser C:\Triage\ --txt                             # Windows
+PlistParser.exe C:\Triage\ --txt                             # Windows
 ./PlistParser /mnt/triage/ --txt                         # Linux
 ./PlistParser ~/Library/Preferences/ --txt               # macOS
 ```
@@ -112,7 +112,7 @@ Output is saved to `Desktop\PlistParser_Results\` (Windows) or `~/Desktop/PlistP
 
 ---
 
-### Live Mode — macOS Only
+### Live Mode - macOS Only
 
 Scan all forensically relevant plist locations on the live macOS system:
 
@@ -145,10 +145,10 @@ sudo ./PlistParser --live --txt
 
 ## Output
 
-- **TXT** — human-readable parsed output, one file per plist.
-- **JSON** — full structured output preserving all data types.
-- **CSV** — auto-detects the structure of each plist and creates proper columns. For example, `Downloads.plist` produces a CSV with one row per download entry and named columns like `DownloadEntryURL`, `DownloadEntryPath`, `DownloadEntryDateAddedKey`, etc.
-- **duplicates_log.txt** — created when duplicate filenames are found across directories, listing original paths and renamed output files.
+- **TXT** - human-readable parsed output, one file per plist.
+- **JSON** - full structured output preserving all data types.
+- **CSV** - auto-detects the structure of each plist and creates proper columns. For example, `Downloads.plist` produces a CSV with one row per download entry and named columns like `DownloadEntryURL`, `DownloadEntryPath`, `DownloadEntryDateAddedKey`, etc.
+- **duplicates_log.txt** - created when duplicate filenames are found across directories, listing original paths and renamed output files.
 
 ---
 
@@ -160,7 +160,7 @@ If you encounter warnings, consider:
 
 - Running the tool in a sandbox or isolated environment.
 - Adding an exclusion rule for the executable in your antivirus software.
-- Reviewing the source code directly — available in this repository.
+- Temporarily disabling your antivirus software.
 
 ---
 
