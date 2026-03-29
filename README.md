@@ -92,7 +92,7 @@ PlistParser Downloads.plist --txt --json --csv
 Parse and save to a specific output folder (no console output):
 
 ```bash
-PlistParser.exe Downloads.plist --txt -o C:\results          # Windows
+PlistParser.exe Downloads.plist --txt -o C:\results      # Windows
 ./PlistParser Downloads.plist --txt -o ~/results         # Linux / macOS
 ```
 
