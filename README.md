@@ -103,7 +103,7 @@ PlistParser.exe Downloads.plist --txt -o C:\results          # Windows
 Scan a folder recursively and export all parsed plists:
 
 ```bash
-PlistParser.exe C:\Triage\ --txt                             # Windows
+PlistParser.exe C:\Triage\ --txt                         # Windows
 ./PlistParser /mnt/triage/ --txt                         # Linux
 ./PlistParser ~/Library/Preferences/ --txt               # macOS
 ```
