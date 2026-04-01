@@ -42,6 +42,7 @@ If the Linux binary does not run, check your glibc version with:
 
 ```bash
 ldd --version
+```
 
 ## Installation and Usage
 
