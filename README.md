@@ -37,7 +37,6 @@ Expected to work on:
 Not guaranteed on:
 - Older Linux distributions
 - ARM systems
-- musl-based distributions such as Alpine Linux
 
 If the Linux binary does not run, check your glibc version with:
 
