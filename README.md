@@ -13,7 +13,7 @@
 - **Live scan mode** (`--live`) - scans common forensically relevant plist locations on a live macOS system, including Preferences, LaunchAgents, LaunchDaemons, and other plist-based artifacts.
 - Supports **single file**, **recursive directory**, and **live system** scanning modes.
 - Handles **duplicate filenames** across directories - renames and logs automatically.
-- Available as a **standalone executable** for Windows, Linux, and macOS - no dependencies required.
+- Available as a **standalone executable** for Windows, Linux, and macOS.
 
 ## Download
 
@@ -22,6 +22,27 @@
 | Windows  | [PlistParser_Windows.7z](./PlistParser_Windows.7z) |
 | Linux    | [PlistParser_Linux.7z](./PlistParser_Linux.7z) |
 | macOS    | [PlistParser_macOS.7z](./PlistParser_macOS.7z) |
+
+## Linux Compatibility
+
+The Linux executable was built for **x86_64 glibc-based systems**.
+
+Tested on:
+- REMnux
+- Kali Linux
+
+Expected to work on:
+- Debian/Ubuntu/Kali-based systems with **glibc 2.31 or newer**
+
+Not guaranteed on:
+- Older Linux distributions
+- ARM systems
+- musl-based distributions such as Alpine Linux
+
+If the Linux binary does not run, check your glibc version with:
+
+```bash
+ldd --version
 
 ## Installation and Usage
 
